@@ -1,0 +1,43 @@
+{
+  "ping": [
+    {
+      "field": "latency",
+      "operator": ">",
+      "value": 120,
+      "level": "WARN",
+      "message": "Elevated latency detected"
+    },
+    {
+      "field": "latency",
+      "operator": ">",
+      "value": 250,
+      "level": "CRITICAL",
+      "message": "Severe latency detected"
+    }
+  ],
+  "http": [
+    {
+      "field": "status",
+      "operator": ">=",
+      "value": 500,
+      "level": "CRITICAL",
+      "message": "Server error detected"
+    },
+    {
+      "field": "status",
+      "operator": ">=",
+      "value": 400,
+      "level": "WARN",
+      "message": "HTTP error detected"
+    }
+  ],
+  "scan": [
+    {
+      "field": "open_ports",
+      "operator": ">",
+      "value": 3,
+      "level": "WARN",
+      "message": "Multiple open ports detected"
+    }
+  ]
+}

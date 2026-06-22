@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+
+reports/
+backups/
+
+sentinel_history/
+
+envwatch_log.txt
+envwatch_v36_backup.py
+
+sentinel_report*
+sentinel_cyber*
+
+*.html
+*.json.bak
